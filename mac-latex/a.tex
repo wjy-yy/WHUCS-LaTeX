@@ -34,11 +34,8 @@
 }
 \geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.0cm}
 
-\newCJKfontfamily\sonti{STSongti-SC-Regular}[BoldFont=STSongti-SC-Bold]
-
-\newCJKfontfamily\Sonti{STSongti-SC-Bold}[BoldFont=STSongti-SC-Bold]
-
-\setCJKmonofont{STSongti-SC-Regular}[BoldFont=STSongti-SC-Bold]
+\setCJKfamilyfont{song}[AutoFakeBold={4}]{SimSun}
+\newcommand{\song}{\CJKfamily{song}}
 
 \titleformat*{\section}{\centering\zihao{-2}\bfseries}
 
@@ -56,7 +53,7 @@
 	\begin{center}
 		
 	\vspace{50pt}
-	{\zihao{1}\tt 武汉大学计算机学院\\\vspace{10pt}
+	{\song\zihao{1}\bfseries 武汉大学计算机学院\\\vspace{10pt}
 		本科生课程设计报告}
 	
 	\vspace{50pt}
@@ -91,7 +88,8 @@
 \newpage
 
 	\begin{center}
-	{\zihao{2}\Sonti 郑\ 重\ 声\ 明}
+
+	{\zihao{2}\song\bfseries 郑\ 重\ 声\ 明}
 	\end{center}
 
 	\vspace{40pt}
@@ -165,6 +163,35 @@
 
 	一般macOS推荐使用 TeX Live 作为编译器，VS Code 或 TeX Studio作为编辑器。
 
+\subsection{自定义字体}
+
+	{\tt $\backslash$songti} {\songti 宋体}
+	\begin{itemize}
+		\item {\tt$\backslash$zihao{1}} {\zihao{1} 一号}
+		\item {\tt$\backslash$zihao{-1}} {\zihao{-1} 小一}
+		\item {\tt$\backslash$zihao{2}} {\zihao{2} 二号}
+		\item {\tt$\backslash$zihao{-2}} {\zihao{-2} 小二}
+		\item {\tt$\backslash$zihao{3}} {\zihao{3} 三号}
+		\item {\tt$\backslash$zihao{-3}} {\zihao{-3} 小三}
+		\item {\tt$\backslash$zihao{4}} {\zihao{4} 四号}
+		\item {\tt$\backslash$zihao{-4}} {\zihao{-4} 小四}
+		\item {\tt$\backslash$zihao{5}} {\zihao{5} 五号}
+		\item {\tt$\backslash$zihao{-5}} {\zihao{-5} 小五}
+	\end{itemize}
+
+	{\tt $\backslash$heiti} {\heiti 黑体}
+	\begin{itemize}{\heiti
+		\item {\tt$\backslash$zihao{1}} {\zihao{1} 一号}
+		\item {\tt$\backslash$zihao{-1}} {\zihao{-1} 小一}
+		\item {\tt$\backslash$zihao{2}} {\zihao{2} 二号}
+		\item {\tt$\backslash$zihao{-2}} {\zihao{-2} 小二}
+		\item {\tt$\backslash$zihao{3}} {\zihao{3} 三号}
+		\item {\tt$\backslash$zihao{-3}} {\zihao{-3} 小三}
+		\item {\tt$\backslash$zihao{4}} {\zihao{4} 四号}
+		\item {\tt$\backslash$zihao{-4}} {\zihao{-4} 小四}
+		\item {\tt$\backslash$zihao{5}} {\zihao{5} 五号}
+		\item {\tt$\backslash$zihao{-5}} {\zihao{-5} 小五}}
+	\end{itemize}
 
 \newpage
 
