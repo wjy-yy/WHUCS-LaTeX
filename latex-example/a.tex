@@ -17,8 +17,6 @@
 \newcommand{\ee}{\mathrm e}
 \newcommand{\ii}{\mathrm i}
 \usepackage{xcolor}
-%\geometry{left=3cm,right=2.5cm,top=1.5cm,bottom=2.5cm}
-%\setmonofont{YaHei-Consolas-Hybrid}
 \lstset{
 	columns=fixed, 
 	tabsize=4,
@@ -35,11 +33,10 @@
 	breaklines=true,
 }
 
-\newCJKfontfamily\sonti{STSongti-SC-Regular}[BoldFont=STSongti-SC-Bold]
-%\newCJKfontfamily\heiti{SimHei}[FakeBold=3]
+\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.0cm}
 
-%\setCJKmainfont{STSongti-SC-Regular}[BoldFont=STSongti-SC-Bold]
-\setCJKmonofont{STSongti-SC-Regular}[BoldFont=STSongti-SC-Bold]
+\setCJKfamilyfont{song}[AutoFakeBold={4}]{SimSun}
+\newcommand{\song}{\CJKfamily{song}}
 
 \titleformat*{\section}{\centering\zihao{-2}\bfseries}
 
@@ -58,7 +55,7 @@
 	\begin{center}
 		
 	\vspace{50pt}
-	{\zihao{1}\tt 武汉大学计算机学院\\\vspace{10pt}
+	{\song\zihao{1}\bfseries 武汉大学计算机学院\\\vspace{10pt}
 		本科生课程设计报告}
 	
 	\vspace{50pt}
@@ -94,7 +91,7 @@
 \newpage
 
 	\begin{center}
-	{\setmainfont{SimSun}\zihao{2}\bf 郑\ 重\ 声\ 明}
+	{\setmainfont{SimSun}\zihao{2}\bfseries 郑\ 重\ 声\ 明}
 	\end{center}
 
 	\vspace{20pt}
