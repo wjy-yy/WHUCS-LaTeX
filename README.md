@@ -19,3 +19,5 @@
 - 本仓库遵循CC BY-SA 4.0协议，欢迎对其进行修改，并给出适当的署名。
 
 - 如有问题可提交issue，或发邮件至 [wjyyy1@whu.edu.cn](mailto:wjyyy1@whu.edu.cn)
+
+<img width="939" alt="image" src="https://github.com/wjy-yy/WHUCS-LaTeX/assets/36905782/9ac6db95-dc7f-4c49-ae7d-53d3e5bb5468">
